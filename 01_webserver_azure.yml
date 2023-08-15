@@ -4,7 +4,7 @@
   become: true
   vars:
     websiteheader: "Ansible Playbook"
-    websiteauthor: "Jesper Berth"
+    websiteauthor: "Christian Merrild"
 
   tasks:
     - name: Install Apache
