@@ -49,7 +49,7 @@
             msg: "Will always run"
 
     - name: Configure Firewall
-      ansible.posix.firewall:
+      ansible.posix.firewalld:
         zone: public
         service: http
         permanent: true
