@@ -37,7 +37,7 @@
           ansible.builtin.debug:
             msg: httpd is running
           when: httpd_status.state == "started"
-  
+
       rescue:
         - name: Print when errors
           ansible.builtin.debug:
@@ -56,8 +56,8 @@
         state: enabled
       notify: Firewall reload
       tags:
-        -  firewall
-        -  config
+        - firewall
+        - config
   handlers:
     - name: Firewall reload
       ansible.builtin.systemd:
