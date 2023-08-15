@@ -56,7 +56,7 @@
         state: enabled
       notify: Firewall reload
       tags:
-        -  Firewall
+        -  firewall
         -  config
   handlers:
     - name: Firewall reload
